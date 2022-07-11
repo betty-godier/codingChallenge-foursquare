@@ -1,13 +1,13 @@
 //
-//      2022  Betty.dev 
+//      2022  Betty Godier
+//      Coding challenge
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        PlaceListView()
     }
 }
 

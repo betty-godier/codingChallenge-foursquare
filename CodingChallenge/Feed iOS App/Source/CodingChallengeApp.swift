@@ -1,5 +1,6 @@
 //
-//      2022  Betty.dev 
+//      2022  Betty Godier
+//      Coding challenge
 //
 
 import SwiftUI
