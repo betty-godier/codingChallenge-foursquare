@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-#  Coding Challenge
+###  Coding Challenge
 
 Description
 Make use of the Foursquare API to build an app that shows a list of venues around the user’s location. 
 Optionally, give the user a possibility to adjust the radius of interest.
 Decide yourself which venue details should be relevant to the user. You have full freedom on how to present data on screen.
-=======
-# codingChallenge-foursquare
-Make use of the Foursquare API to build an app that shows a list of venues around the user’s location.
 
 ![Simulator Screen Shot - iPhone 12 - 2022-07-11 at 23 47 14](https://user-images.githubusercontent.com/72552073/178364737-e23b85fa-16a4-4315-88a8-95ac2e20e8c7.png)
->>>>>>> c3b6d2e19701c4e4f9cfb4c8cc72ac811169fb0e
+
