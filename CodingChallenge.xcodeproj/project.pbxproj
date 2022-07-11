@@ -14,6 +14,14 @@
 		C579613F287B7A9000F55985 /* CodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579613E287B7A9000F55985 /* CodingChallengeTests.swift */; };
 		C5796149287B7A9000F55985 /* CodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796148287B7A9000F55985 /* CodingChallengeUITests.swift */; };
 		C579614B287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579614A287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift */; };
+		C5796158287B7B2F00F55985 /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796157287B7B2F00F55985 /* PlaceListViewModel.swift */; };
+		C579615A287B7B5F00F55985 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796159287B7B5F00F55985 /* PlaceListView.swift */; };
+		C579615C287B7BB600F55985 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579615B287B7BB600F55985 /* Place.swift */; };
+		C579615E287B7BEA00F55985 /* Helpers + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579615D287B7BEA00F55985 /* Helpers + Alerts.swift */; };
+		C5796160287B7C1B00F55985 /* MyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579615F287B7C1B00F55985 /* MyLocationManager.swift */; };
+		C5796162287B7C6600F55985 /* FeedPlaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796161287B7C6600F55985 /* FeedPlaceMapper.swift */; };
+		C5796164287B7DD500F55985 /* Helpers + Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796163287B7DD500F55985 /* Helpers + Errors.swift */; };
+		C57E7630287CC52000B654D6 /* foursquareV3Search.json in Resources */ = {isa = PBXBuildFile; fileRef = C57E762F287CC52000B654D6 /* foursquareV3Search.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,16 @@
 		C5796144287B7A9000F55985 /* CodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5796148287B7A9000F55985 /* CodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeUITests.swift; sourceTree = "<group>"; };
 		C579614A287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C5796157287B7B2F00F55985 /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
+		C5796159287B7B5F00F55985 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
+		C579615B287B7BB600F55985 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		C579615D287B7BEA00F55985 /* Helpers + Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers + Alerts.swift"; sourceTree = "<group>"; };
+		C579615F287B7C1B00F55985 /* MyLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationManager.swift; sourceTree = "<group>"; };
+		C5796161287B7C6600F55985 /* FeedPlaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPlaceMapper.swift; sourceTree = "<group>"; };
+		C5796163287B7DD500F55985 /* Helpers + Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers + Errors.swift"; sourceTree = "<group>"; };
+		C57E762D287CBEAC00B654D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C57E762F287CC52000B654D6 /* foursquareV3Search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foursquareV3Search.json; sourceTree = "<group>"; };
+		C57E7632287CC98600B654D6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,9 +89,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C565C139287C9C090053660B /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				C5796161287B7C6600F55985 /* FeedPlaceMapper.swift */,
+				C5796163287B7DD500F55985 /* Helpers + Errors.swift */,
+			);
+			path = "Feed API";
+			sourceTree = "<group>";
+		};
+		C565C13A287C9C240053660B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */,
+				C579612F287B7A8F00F55985 /* ContentView.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		C565C13B287C9C720053660B /* Feed iOS App */ = {
+			isa = PBXGroup;
+			children = (
+				C565C13A287C9C240053660B /* Source */,
+				C565C13E287C9E9A0053660B /* Places */,
+				C565C13F287C9F6C0053660B /* Supporting Files */,
+			);
+			path = "Feed iOS App";
+			sourceTree = "<group>";
+		};
+		C565C13C287C9CFF0053660B /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				C579615F287B7C1B00F55985 /* MyLocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		C565C13D287C9DBB0053660B /* Feed Feature */ = {
+			isa = PBXGroup;
+			children = (
+				C579615B287B7BB600F55985 /* Place.swift */,
+			);
+			path = "Feed Feature";
+			sourceTree = "<group>";
+		};
+		C565C13E287C9E9A0053660B /* Places */ = {
+			isa = PBXGroup;
+			children = (
+				C57E762E287CC11800B654D6 /* View */,
+				C5796157287B7B2F00F55985 /* PlaceListViewModel.swift */,
+			);
+			path = Places;
+			sourceTree = "<group>";
+		};
+		C565C13F287C9F6C0053660B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C579615D287B7BEA00F55985 /* Helpers + Alerts.swift */,
+				C5796133287B7A9000F55985 /* Preview Content */,
+				C5796131287B7A9000F55985 /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		C5796121287B7A8F00F55985 = {
 			isa = PBXGroup;
 			children = (
+				C57E7632287CC98600B654D6 /* README.md */,
 				C579612C287B7A8F00F55985 /* CodingChallenge */,
 				C579613D287B7A9000F55985 /* CodingChallengeTests */,
 				C5796147287B7A9000F55985 /* CodingChallengeUITests */,
@@ -94,10 +176,11 @@
 		C579612C287B7A8F00F55985 /* CodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */,
-				C579612F287B7A8F00F55985 /* ContentView.swift */,
-				C5796131287B7A9000F55985 /* Assets.xcassets */,
-				C5796133287B7A9000F55985 /* Preview Content */,
+				C57E762D287CBEAC00B654D6 /* Info.plist */,
+				C565C13D287C9DBB0053660B /* Feed Feature */,
+				C565C139287C9C090053660B /* Feed API */,
+				C565C13C287C9CFF0053660B /* Managers */,
+				C565C13B287C9C720053660B /* Feed iOS App */,
 			);
 			path = CodingChallenge;
 			sourceTree = "<group>";
@@ -113,6 +196,7 @@
 		C579613D287B7A9000F55985 /* CodingChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				C57E7631287CC5E300B654D6 /* Mocking */,
 				C579613E287B7A9000F55985 /* CodingChallengeTests.swift */,
 			);
 			path = CodingChallengeTests;
@@ -125,6 +209,22 @@
 				C579614A287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift */,
 			);
 			path = CodingChallengeUITests;
+			sourceTree = "<group>";
+		};
+		C57E762E287CC11800B654D6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C5796159287B7B5F00F55985 /* PlaceListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C57E7631287CC5E300B654D6 /* Mocking */ = {
+			isa = PBXGroup;
+			children = (
+				C57E762F287CC52000B654D6 /* foursquareV3Search.json */,
+			);
+			path = Mocking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +340,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C57E7630287CC52000B654D6 /* foursquareV3Search.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +358,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5796160287B7C1B00F55985 /* MyLocationManager.swift in Sources */,
+				C579615E287B7BEA00F55985 /* Helpers + Alerts.swift in Sources */,
 				C5796130287B7A8F00F55985 /* ContentView.swift in Sources */,
 				C579612E287B7A8F00F55985 /* CodingChallengeApp.swift in Sources */,
+				C579615A287B7B5F00F55985 /* PlaceListView.swift in Sources */,
+				C5796158287B7B2F00F55985 /* PlaceListViewModel.swift in Sources */,
+				C5796162287B7C6600F55985 /* FeedPlaceMapper.swift in Sources */,
+				C5796164287B7DD500F55985 /* Helpers + Errors.swift in Sources */,
+				C579615C287B7BB600F55985 /* Place.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,12 +522,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CodingChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = GU25HGUJLC;
+				DEVELOPMENT_ASSET_PATHS = "\"CodingChallenge/Feed iOS App/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodingChallenge/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This application needs you location to search best places around you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,9 +543,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.betty.CodingChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -443,12 +555,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CodingChallenge/Preview Content\"";
-				DEVELOPMENT_TEAM = GU25HGUJLC;
+				DEVELOPMENT_ASSET_PATHS = "\"CodingChallenge/Feed iOS App/Supporting Files/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CodingChallenge/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This application needs you location to search best places around you";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,9 +576,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.betty.CodingChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
