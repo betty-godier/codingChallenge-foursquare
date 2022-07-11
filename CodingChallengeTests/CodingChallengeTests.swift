@@ -1,33 +1,62 @@
 //
-//      2022  Betty.dev 
+//      2022  Betty Godier
+//      Coding challenge
 //
 
+import SwiftUI
 import XCTest
 @testable import CodingChallenge
 
-class CodingChallengeTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+class PlaceListViewModelTests: XCTestCase {
+    
+    var placeListViewModel: PlaceListViewModel!
+//    var locationManager: FakeLocationManager!
+    
+    @MainActor override func setUp() {
+        placeListViewModel = PlaceListViewModel()
+//        locationManager = FakeLocationManager()
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testDownloadWebData() async throws {
+        let request = URLRequest(url: URL(string: "https://a-url.com")!)
+        
+        let dataAndResponse: (data: Data, response: URLResponse) = try await URLSession.shared.data(for: request, delegate: nil)
+        _ = dataAndResponse.1 as? HTTPURLResponse
+        
+        let httpResponse = try XCTUnwrap(dataAndResponse.response as? HTTPURLResponse, "Expected an HTTPURLResponse.")
+        XCTAssertEqual(httpResponse.statusCode, 200, "Expected a 200 OK response.")
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
+    
+    // MARK: Helpers
+    
+    private func makeItemJSON(_ items: [[String: Any]]) -> Data {
+        let json = [ "items": items]
+        return try! JSONSerialization.data(withJSONObject: json)
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    private func failure(_ error: RemoteFeedLoader.Error) -> Swift.Error {
+        return error
+    }
+    
+    //        let amsterdamLocation = makeLocation(lat: 52.3676, long: 4.9041)
+    private func makeLocation(lat: Double, long: Double) {
+    }
+    
+    private func makeItem(id: UUID, name: String? = nil, address: String? = nil, city: String? = nil, categoryName: String? = nil, distance: Int? = nil) -> (model:Place, json: [String: Any]) {
+        let item = Place(name: name, address: address, city: city, distance: distance ?? 20, categoryName: categoryName ?? "")
+        let json = [
+            "name": name,
+            "address": address,
+            "categoryName": categoryName
+        ]
+            .compactMapValues { $0 }
+        
+        return (item, json)
+    }
+    
+    class FakeNetworkMonitoring {
+        var isNetworkReachable: Bool = true
+        func observeNetworkStatus() {
         }
     }
-
 }
