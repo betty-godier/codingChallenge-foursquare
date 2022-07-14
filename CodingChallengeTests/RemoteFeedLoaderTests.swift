@@ -3,14 +3,12 @@
 //      Coding challenge
 //
 
-import SwiftUI
 import XCTest
 @testable import CodingChallenge
 
+class RemoteFeedLoaderTests: XCTestCase {
 
-class PlaceListViewModelTests: XCTestCase {
-    
-    func test_init_doesNotRequestDataFromURLRequest() {
+    func test_init_doesNotRequestDatafromURL() {
         let client = HTTPClient()
         _ = RemoteFeedLoader()
         
