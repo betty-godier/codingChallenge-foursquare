@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C51F199A287FF441009BF810 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1999287FF441009BF810 /* HTTPClient.swift */; };
+		C51F199C287FF76E009BF810 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F199B287FF76E009BF810 /* RemoteFeedLoader.swift */; };
 		C579612E287B7A8F00F55985 /* CodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */; };
 		C5796130287B7A8F00F55985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612F287B7A8F00F55985 /* ContentView.swift */; };
 		C5796132287B7A9000F55985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5796131287B7A9000F55985 /* Assets.xcassets */; };
@@ -14,14 +16,10 @@
 		C579613F287B7A9000F55985 /* CodingChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579613E287B7A9000F55985 /* CodingChallengeTests.swift */; };
 		C5796149287B7A9000F55985 /* CodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796148287B7A9000F55985 /* CodingChallengeUITests.swift */; };
 		C579614B287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579614A287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift */; };
-		C5796158287B7B2F00F55985 /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796157287B7B2F00F55985 /* PlaceListViewModel.swift */; };
-		C579615A287B7B5F00F55985 /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796159287B7B5F00F55985 /* PlaceListView.swift */; };
-		C579615C287B7BB600F55985 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579615B287B7BB600F55985 /* Place.swift */; };
-		C579615E287B7BEA00F55985 /* Helpers + Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579615D287B7BEA00F55985 /* Helpers + Alerts.swift */; };
 		C5796160287B7C1B00F55985 /* MyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579615F287B7C1B00F55985 /* MyLocationManager.swift */; };
-		C5796162287B7C6600F55985 /* FeedPlaceMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796161287B7C6600F55985 /* FeedPlaceMapper.swift */; };
-		C5796164287B7DD500F55985 /* Helpers + Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796163287B7DD500F55985 /* Helpers + Errors.swift */; };
 		C57E7630287CC52000B654D6 /* foursquareV3Search.json in Resources */ = {isa = PBXBuildFile; fileRef = C57E762F287CC52000B654D6 /* foursquareV3Search.json */; };
+		C57E763A287E7E5B00B654D6 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E7639287E7E5B00B654D6 /* FeedLoader.swift */; };
+		C57E7642287EA39A00B654D6 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E7641287EA39A00B654D6 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C51F1999287FF441009BF810 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		C51F199B287FF76E009BF810 /* RemoteFeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFeedLoader.swift; sourceTree = "<group>"; };
 		C579612A287B7A8F00F55985 /* CodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeApp.swift; sourceTree = "<group>"; };
 		C579612F287B7A8F00F55985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,17 +52,13 @@
 		C5796144287B7A9000F55985 /* CodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5796148287B7A9000F55985 /* CodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeUITests.swift; sourceTree = "<group>"; };
 		C579614A287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C5796157287B7B2F00F55985 /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
-		C5796159287B7B5F00F55985 /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
-		C579615B287B7BB600F55985 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
-		C579615D287B7BEA00F55985 /* Helpers + Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers + Alerts.swift"; sourceTree = "<group>"; };
 		C579615F287B7C1B00F55985 /* MyLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationManager.swift; sourceTree = "<group>"; };
-		C5796161287B7C6600F55985 /* FeedPlaceMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedPlaceMapper.swift; sourceTree = "<group>"; };
-		C5796163287B7DD500F55985 /* Helpers + Errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helpers + Errors.swift"; sourceTree = "<group>"; };
 		C57E762D287CBEAC00B654D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57E762F287CC52000B654D6 /* foursquareV3Search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = foursquareV3Search.json; sourceTree = "<group>"; };
 		C57E7632287CC98600B654D6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C57E7633287D4BEC00B654D6 /* Place Feed Feature.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Place Feed Feature.md"; sourceTree = "<group>"; };
+		C57E7639287E7E5B00B654D6 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
+		C57E7641287EA39A00B654D6 /* FeedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +89,8 @@
 		C565C139287C9C090053660B /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
-				C5796161287B7C6600F55985 /* FeedPlaceMapper.swift */,
-				C5796163287B7DD500F55985 /* Helpers + Errors.swift */,
+				C51F199B287FF76E009BF810 /* RemoteFeedLoader.swift */,
+				C51F1999287FF441009BF810 /* HTTPClient.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -129,7 +125,8 @@
 		C565C13D287C9DBB0053660B /* Feed Feature */ = {
 			isa = PBXGroup;
 			children = (
-				C579615B287B7BB600F55985 /* Place.swift */,
+				C57E7639287E7E5B00B654D6 /* FeedLoader.swift */,
+				C57E7641287EA39A00B654D6 /* FeedItem.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -138,7 +135,6 @@
 			isa = PBXGroup;
 			children = (
 				C57E762E287CC11800B654D6 /* View */,
-				C5796157287B7B2F00F55985 /* PlaceListViewModel.swift */,
 			);
 			path = Places;
 			sourceTree = "<group>";
@@ -146,7 +142,6 @@
 		C565C13F287C9F6C0053660B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				C579615D287B7BEA00F55985 /* Helpers + Alerts.swift */,
 				C5796133287B7A9000F55985 /* Preview Content */,
 				C5796131287B7A9000F55985 /* Assets.xcassets */,
 			);
@@ -216,7 +211,6 @@
 		C57E762E287CC11800B654D6 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				C5796159287B7B5F00F55985 /* PlaceListView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -361,14 +355,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5796160287B7C1B00F55985 /* MyLocationManager.swift in Sources */,
-				C579615E287B7BEA00F55985 /* Helpers + Alerts.swift in Sources */,
 				C5796130287B7A8F00F55985 /* ContentView.swift in Sources */,
+				C57E7642287EA39A00B654D6 /* FeedItem.swift in Sources */,
 				C579612E287B7A8F00F55985 /* CodingChallengeApp.swift in Sources */,
-				C579615A287B7B5F00F55985 /* PlaceListView.swift in Sources */,
-				C5796158287B7B2F00F55985 /* PlaceListViewModel.swift in Sources */,
-				C5796162287B7C6600F55985 /* FeedPlaceMapper.swift in Sources */,
-				C5796164287B7DD500F55985 /* Helpers + Errors.swift in Sources */,
-				C579615C287B7BB600F55985 /* Place.swift in Sources */,
+				C51F199A287FF441009BF810 /* HTTPClient.swift in Sources */,
+				C51F199C287FF76E009BF810 /* RemoteFeedLoader.swift in Sources */,
+				C57E763A287E7E5B00B654D6 /* FeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +520,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodingChallenge/Feed iOS App/Supporting Files/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GU25HGUJLC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CodingChallenge/Info.plist;
@@ -561,7 +553,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CodingChallenge/Feed iOS App/Supporting Files/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GU25HGUJLC;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CodingChallenge/Info.plist;

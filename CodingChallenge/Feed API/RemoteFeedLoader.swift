@@ -3,3 +3,7 @@
 //
 
 import Foundation
+
+class RemoteFeedLoader {
+    
+}

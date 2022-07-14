@@ -3,3 +3,7 @@
 //
 
 import Foundation
+
+class HTTPClient {
+    var requestedURL: URLRequest?
+}

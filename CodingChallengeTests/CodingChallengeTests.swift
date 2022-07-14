@@ -10,7 +10,7 @@ import XCTest
 
 class PlaceListViewModelTests: XCTestCase {
     
-    func test_init_doesNotRequestDataFromURL() {
+    func test_init_doesNotRequestDataFromURLRequest() {
         let client = HTTPClient()
         _ = RemoteFeedLoader()
         
