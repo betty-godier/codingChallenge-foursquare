@@ -14,6 +14,6 @@ class RemoteFeedLoader {
         self.client = client
     }
     func load() {
-        client.perform(request: url)
+        client.get(from: url)
     }
 }

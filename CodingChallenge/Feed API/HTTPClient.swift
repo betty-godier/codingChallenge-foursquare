@@ -6,5 +6,5 @@
 import Foundation
 
 protocol HTTPClient {
-    func perform(request url: URLRequest)
+    func get(from url: URLRequest)
 }
