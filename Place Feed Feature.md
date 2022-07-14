@@ -37,3 +37,59 @@
         And the cache is empty
         When the customer requests to see the feed
         Then the app should display an error message
+
+## Use Cases
+
+### Load Feed
+
+#### Data:
+
+- URL
+
+#### Primary course (happy path):
+
+1. Execute "Load Feed Items" command above the data.
+2. System downloads data from the URL.
+3. System validates downloaded data.
+4. System creates feed items from valid data.
+5. System delivers feed items.
+
+#### Invalid data - error course (sad path) :
+
+1. System deliverss error.
+
+#### No connectivity - error course (sad path):
+
+1. Systems delivers error.
+
+###  Load Feed Fallback (Cache)
+
+#### Data:
+
+- Max age
+
+#### Primary course
+
+1. Execute "Retrieve Feed Items" command with above data.
+2. System fetches feed data from cache
+3. System creates feed items from cached data.
+4. Systems delivers feed items.
+
+#### No cache course (sad path):
+
+1. System delivers no feed items.
+
+### Save Feed Items
+
+#### Data
+
+- Feed items
+
+#### Primary course (happy path)
+
+1. Execute "Save Feed Items" command with above data.
+2. System encodes  feed items.
+3. System timestamps the new cache.
+4. System replaces the cache with new dara.
+5. System delivers success message.
+
