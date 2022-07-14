@@ -6,7 +6,12 @@
 import Foundation
 
 class RemoteFeedLoader {
+    let client: HTTPClient
+    
+    init(client: HTTPClient) {
+        self.client = client
+    }
     func load() {
-        HTTPClient.shared.get(from: URLRequest(url: URL(string: "https://a-url.com")!))
+        client.get(from: URLRequest(url: URL(string: "https://a-url.com")!))
     }
 }

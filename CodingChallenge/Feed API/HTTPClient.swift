@@ -5,8 +5,6 @@
 
 import Foundation
 
-class HTTPClient {
-    static var shared = HTTPClient()
-        
-    func get(from url: URLRequest) { }
+protocol HTTPClient {
+    func get(from url: URLRequest)
 }
