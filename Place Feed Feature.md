@@ -93,3 +93,25 @@
 4. System replaces the cache with new dara.
 5. System delivers success message.
 
+## Flowchart
+
+![Flowchart]()
+
+## Architecture
+
+![Architecture]()
+
+## Model Specs
+
+### Feed Item
+
+| Property   |     Type      | 
+|----------|:-------------:|
+| id |  UUID | 
+| name|    String (optional)   | 
+| address |    String (optional)   | 
+| city|  String (optional) |  
+| categoryName |  String (optional) |  
+| distance | Int(optional) |
+
+
