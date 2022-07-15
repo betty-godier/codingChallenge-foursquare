@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct FeedItem: Equatable {
+public struct FeedItem: Equatable {
     var id = UUID()
     var name: String?
     var address: String?
