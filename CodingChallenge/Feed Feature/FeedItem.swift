@@ -22,14 +22,3 @@ public struct FeedItem: Equatable {
         self.distance = distance
     }
 }
-
-extension FeedItem: Decodable {
-    private enum CodingKeys: String, CodingKey {
-        case id
-        case name
-        case address
-        case city
-        case categoryName
-        case distance
-    }
-}
