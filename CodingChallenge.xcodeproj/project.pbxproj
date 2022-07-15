@@ -59,7 +59,7 @@
 		C51F19A4287FFDCD009BF810 /* CodingChallenge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodingChallenge.h; sourceTree = "<group>"; };
 		C51F19A9287FFDCD009BF810 /* CodingChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C51F19BF2880011E009BF810 /* Place Payload contract.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Place Payload contract.md"; sourceTree = "<group>"; };
-		C51F19C02880031E009BF810 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RemoteFeedLoaderTests.swift; path = CodingChallengeTests/RemoteFeedLoaderTests.swift; sourceTree = SOURCE_ROOT; };
+		C51F19C02880031E009BF810 /* RemoteFeedLoaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RemoteFeedLoaderTests.swift; path = "CodingChallengeTests/Feed API/RemoteFeedLoaderTests.swift"; sourceTree = SOURCE_ROOT; };
 		C51F19C228800404009BF810 /* CodingChallengeTestsiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodingChallengeTestsiOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		C51F19C328800404009BF810 /* CodingChallengeiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeiOS.swift; sourceTree = "<group>"; };
 		C52CA42E2881F65200AE4747 /* FeedItemsMApper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMApper.swift; sourceTree = "<group>"; };
@@ -130,9 +130,17 @@
 		C52CA40A288005E000AE4747 /* CodingChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
-				C51F19C02880031E009BF810 /* RemoteFeedLoaderTests.swift */,
+				C52CA4302881FF9400AE4747 /* Feed API */,
 			);
 			path = CodingChallengeTests;
+			sourceTree = "<group>";
+		};
+		C52CA4302881FF9400AE4747 /* Feed API */ = {
+			isa = PBXGroup;
+			children = (
+				C51F19C02880031E009BF810 /* RemoteFeedLoaderTests.swift */,
+			);
+			path = "Feed API";
 			sourceTree = "<group>";
 		};
 		C565C139287C9C090053660B /* Feed API */ = {
