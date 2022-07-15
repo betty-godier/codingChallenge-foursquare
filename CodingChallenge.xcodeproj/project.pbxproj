@@ -18,6 +18,7 @@
 		C51F19C12880031E009BF810 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F19C02880031E009BF810 /* RemoteFeedLoaderTests.swift */; };
 		C51F19C428800404009BF810 /* CodingChallengeiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F19C328800404009BF810 /* CodingChallengeiOS.swift */; };
 		C52CA42F2881F65200AE4747 /* FeedItemsMApper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA42E2881F65200AE4747 /* FeedItemsMApper.swift */; };
+		C52CA432288200F500AE4747 /* FeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA431288200F500AE4747 /* FeedLoader.swift */; };
 		C579612E287B7A8F00F55985 /* CodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */; };
 		C5796130287B7A8F00F55985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612F287B7A8F00F55985 /* ContentView.swift */; };
 		C5796132287B7A9000F55985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5796131287B7A9000F55985 /* Assets.xcassets */; };
@@ -63,6 +64,7 @@
 		C51F19C228800404009BF810 /* CodingChallengeTestsiOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodingChallengeTestsiOS-Bridging-Header.h"; sourceTree = "<group>"; };
 		C51F19C328800404009BF810 /* CodingChallengeiOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeiOS.swift; sourceTree = "<group>"; };
 		C52CA42E2881F65200AE4747 /* FeedItemsMApper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedItemsMApper.swift; sourceTree = "<group>"; };
+		C52CA431288200F500AE4747 /* FeedLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedLoader.swift; sourceTree = "<group>"; };
 		C579612A287B7A8F00F55985 /* CodingChallengeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallengeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeApp.swift; sourceTree = "<group>"; };
 		C579612F287B7A8F00F55985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				C57E7641287EA39A00B654D6 /* FeedItem.swift */,
+				C52CA431288200F500AE4747 /* FeedLoader.swift */,
 			);
 			path = "Feed Feature";
 			sourceTree = "<group>";
@@ -477,6 +480,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C52CA432288200F500AE4747 /* FeedLoader.swift in Sources */,
 				C51F19B9287FFEDC009BF810 /* FeedItem.swift in Sources */,
 				C51F19BC287FFEF3009BF810 /* MyLocationManager.swift in Sources */,
 				C51F19BA287FFEDF009BF810 /* RemoteFeedLoader.swift in Sources */,
