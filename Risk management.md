@@ -8,7 +8,7 @@ When using 3rd-party frameworks, it's advised to add extra tests to validate ass
 
 For example, the URLSession behavior for failed requests changed on iOS 14.
 
-Since iOS 14, the URLSession replaces errors with a new error instance containing the data task in the  userInfo dictionary.
+Since iOS 14, the URLSession replaces errors with a new error instance containing the data task in the userInfo dictionary.
 
 
 
