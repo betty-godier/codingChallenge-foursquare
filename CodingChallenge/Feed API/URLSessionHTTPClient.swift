@@ -5,16 +5,16 @@
 
 import Foundation
 
-class URLSessionHTTPClient: HTTPClient {
+public class URLSessionHTTPClient: HTTPClient {
     private let session: URLSession
     
-    init(session: URLSession = .shared) {
+    public init(session: URLSession = .shared) {
         self.session = session
     }
     
-    struct UnexpectedValuesRepresentativeError: Error {}
+    private struct UnexpectedValuesRepresentativeError: Error {}
     
-    func get(from request: URLRequest, completion: @escaping (HTTPClientResult)-> Void) {
+    public func get(from request: URLRequest, completion: @escaping (HTTPClientResult)-> Void) {
         session.dataTask(with: request) { data, response, error in
             if let error = error {
                 completion(.failure(error))
