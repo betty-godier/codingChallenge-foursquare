@@ -5,7 +5,7 @@
 
 import Foundation
 
-class URLSessionHTTPCLient {
+class URLSessionHTTPCLient: HTTPClient {
     private let session: URLSession
     
     init(session: URLSession = .shared) {

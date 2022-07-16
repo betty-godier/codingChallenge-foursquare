@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C51F199A287FF441009BF810 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1999287FF441009BF810 /* HTTPClient.swift */; };
 		C51F199C287FF76E009BF810 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F199B287FF76E009BF810 /* RemoteFeedLoader.swift */; };
 		C51F19AA287FFDCD009BF810 /* CodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51F19A2287FFDCD009BF810 /* CodingChallenge.framework */; };
 		C51F19B0287FFDCD009BF810 /* CodingChallenge.h in Headers */ = {isa = PBXBuildFile; fileRef = C51F19A4287FFDCD009BF810 /* CodingChallenge.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -22,6 +21,7 @@
 		C52CA434288208F400AE4747 /* URLSessionHTTPCLientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA433288208F400AE4747 /* URLSessionHTTPCLientTests.swift */; };
 		C52CA43628827CC900AE4747 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA43528827CC900AE4747 /* URLSessionHTTPClient.swift */; };
 		C52CA4392882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA4382882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift */; };
+		C52CA43B28832D9700AE4747 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1999287FF441009BF810 /* HTTPClient.swift */; };
 		C579612E287B7A8F00F55985 /* CodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */; };
 		C5796130287B7A8F00F55985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612F287B7A8F00F55985 /* ContentView.swift */; };
 		C5796132287B7A9000F55985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5796131287B7A9000F55985 /* Assets.xcassets */; };
@@ -525,9 +525,9 @@
 			files = (
 				C5796160287B7C1B00F55985 /* MyLocationManager.swift in Sources */,
 				C5796130287B7A8F00F55985 /* ContentView.swift in Sources */,
+				C52CA43B28832D9700AE4747 /* HTTPClient.swift in Sources */,
 				C57E7642287EA39A00B654D6 /* FeedItem.swift in Sources */,
 				C579612E287B7A8F00F55985 /* CodingChallengeApp.swift in Sources */,
-				C51F199A287FF441009BF810 /* HTTPClient.swift in Sources */,
 				C51F199C287FF76E009BF810 /* RemoteFeedLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
