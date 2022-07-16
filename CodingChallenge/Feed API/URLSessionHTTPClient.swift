@@ -1,5 +1,6 @@
 //
-//      2022  Betty.dev 
+//      2022  Betty Godier
+//      Coding challenge
 //
 
 import Foundation
@@ -12,6 +13,6 @@ class URLSessionHTTPCLient {
     }
     
     func get(from request: URLRequest) {
-        session.dataTask(with: request) { _, _, _ in }
+        session.dataTask(with: request) { _, _, _ in }.resume()
     }
 }
