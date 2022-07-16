@@ -5,20 +5,10 @@
 
 import Foundation
 
-
-protocol HTTPSession {
-    func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> HTTPSessionTask
-}
-
-protocol HTTPSessionTask {
-    func resume()
-}
-
-
 class URLSessionHTTPCLient {
-    private let session: HTTPSession
+    private let session: URLSession
     
-    init(session: HTTPSession) {
+    init(session: URLSession = .shared) {
         self.session = session
     }
     
