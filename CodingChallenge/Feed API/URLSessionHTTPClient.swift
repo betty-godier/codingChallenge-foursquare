@@ -12,10 +12,14 @@ class URLSessionHTTPCLient {
         self.session = session
     }
     
+    struct UnexpectedValuesRepresentativeError: Error {}
+    
     func get(from request: URLRequest, completion: @escaping (HTTPClientResult)-> Void) {
         session.dataTask(with: request) { _, _, error in
             if let error = error {
                 completion(.failure(error))
+            } else {
+                completion(.failure(UnexpectedValuesRepresentativeError()))
             }
         }.resume()
     }
