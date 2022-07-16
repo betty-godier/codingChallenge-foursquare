@@ -71,6 +71,7 @@
 		C52CA433288208F400AE4747 /* URLSessionHTTPCLientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPCLientTests.swift; sourceTree = "<group>"; };
 		C52CA43528827CC900AE4747 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		C52CA4382882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTrackingHelper.swift"; sourceTree = "<group>"; };
+		C52CA43A28829CC200AE4747 /* Risk management.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Risk management.md"; sourceTree = "<group>"; };
 		C579612A287B7A8F00F55985 /* CodingChallengeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallengeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeApp.swift; sourceTree = "<group>"; };
 		C579612F287B7A8F00F55985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -231,6 +232,7 @@
 				C57E7632287CC98600B654D6 /* README.md */,
 				C57E7633287D4BEC00B654D6 /* Place Feed Feature.md */,
 				C51F19BF2880011E009BF810 /* Place Payload contract.md */,
+				C52CA43A28829CC200AE4747 /* Risk management.md */,
 				C579612C287B7A8F00F55985 /* CodingChallenge */,
 				C52CA40A288005E000AE4747 /* CodingChallengeTests */,
 				C579613D287B7A9000F55985 /* CodingChallengeTestsiOS */,
