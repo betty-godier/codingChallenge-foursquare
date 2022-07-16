@@ -13,7 +13,6 @@
 		C51F19B9287FFEDC009BF810 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E7641287EA39A00B654D6 /* FeedItem.swift */; };
 		C51F19BA287FFEDF009BF810 /* RemoteFeedLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F199B287FF76E009BF810 /* RemoteFeedLoader.swift */; };
 		C51F19BB287FFEE1009BF810 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1999287FF441009BF810 /* HTTPClient.swift */; };
-		C51F19BC287FFEF3009BF810 /* MyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579615F287B7C1B00F55985 /* MyLocationManager.swift */; };
 		C51F19C12880031E009BF810 /* RemoteFeedLoaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F19C02880031E009BF810 /* RemoteFeedLoaderTests.swift */; };
 		C51F19C428800404009BF810 /* CodingChallengeiOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F19C328800404009BF810 /* CodingChallengeiOS.swift */; };
 		C52CA42F2881F65200AE4747 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA42E2881F65200AE4747 /* FeedItemsMapper.swift */; };
@@ -28,7 +27,6 @@
 		C5796135287B7A9000F55985 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5796134287B7A9000F55985 /* Preview Assets.xcassets */; };
 		C5796149287B7A9000F55985 /* CodingChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5796148287B7A9000F55985 /* CodingChallengeUITests.swift */; };
 		C579614B287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579614A287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift */; };
-		C5796160287B7C1B00F55985 /* MyLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579615F287B7C1B00F55985 /* MyLocationManager.swift */; };
 		C57E7642287EA39A00B654D6 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57E7641287EA39A00B654D6 /* FeedItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -81,7 +79,6 @@
 		C5796144287B7A9000F55985 /* CodingChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5796148287B7A9000F55985 /* CodingChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeUITests.swift; sourceTree = "<group>"; };
 		C579614A287B7A9000F55985 /* CodingChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C579615F287B7C1B00F55985 /* MyLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLocationManager.swift; sourceTree = "<group>"; };
 		C57E762D287CBEAC00B654D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C57E7632287CC98600B654D6 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		C57E7633287D4BEC00B654D6 /* Place Feed Feature.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Place Feed Feature.md"; sourceTree = "<group>"; };
@@ -195,7 +192,6 @@
 		C565C13C287C9CFF0053660B /* Managers */ = {
 			isa = PBXGroup;
 			children = (
-				C579615F287B7C1B00F55985 /* MyLocationManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -502,7 +498,6 @@
 				C52CA43628827CC900AE4747 /* URLSessionHTTPClient.swift in Sources */,
 				C52CA432288200F500AE4747 /* FeedLoader.swift in Sources */,
 				C51F19B9287FFEDC009BF810 /* FeedItem.swift in Sources */,
-				C51F19BC287FFEF3009BF810 /* MyLocationManager.swift in Sources */,
 				C51F19BA287FFEDF009BF810 /* RemoteFeedLoader.swift in Sources */,
 				C51F19BB287FFEE1009BF810 /* HTTPClient.swift in Sources */,
 				C52CA42F2881F65200AE4747 /* FeedItemsMapper.swift in Sources */,
@@ -523,7 +518,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5796160287B7C1B00F55985 /* MyLocationManager.swift in Sources */,
 				C5796130287B7A8F00F55985 /* ContentView.swift in Sources */,
 				C52CA43B28832D9700AE4747 /* HTTPClient.swift in Sources */,
 				C57E7642287EA39A00B654D6 /* FeedItem.swift in Sources */,
