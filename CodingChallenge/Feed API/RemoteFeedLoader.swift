@@ -12,6 +12,7 @@ public final class RemoteFeedLoader: FeedLoader {
     public enum Error: Swift.Error {
         case connectivity
         case invalidData
+        case mappingFailure
     }
     
     public typealias Result = LoadFeedResult
@@ -20,8 +21,9 @@ public final class RemoteFeedLoader: FeedLoader {
         self.url = url
         self.client = client
     }
-    public func load(completion: @escaping (Result) -> Void) {
-        client.sendRequest(endpoint: url) { [weak self] result in
+    public func load(radius: String, completion: @escaping (Result) -> Void) {
+        client.sendRequest(endpoint: PlacesEndPoint.search(radius: radius))
+        { [weak self] result in
             guard self != nil else { return }
             
             switch result {

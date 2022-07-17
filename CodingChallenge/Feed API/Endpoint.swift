@@ -5,13 +5,12 @@
 
 import Foundation
 
-protocol Endpoint {
+public protocol Endpoint {
     var scheme: String { get }
     var host: String { get }
     var path: String { get }
     var method: String { get }
     var headers: [String: String]? { get }
-    var body: [String: String]? { get }
     var queryItems: [URLQueryItem]? { get }
     
 }
@@ -26,31 +25,44 @@ extension Endpoint {
     }
 }
 
-enum PlacesEndPoint: Endpoint {
+enum PlacesEndPoint {
+    case search(radius: String)
+}
+
+
+extension PlacesEndPoint: Endpoint {
     var host: String {
-        return "api.foursquare.com"
+        switch self {
+        case .search:
+            return "api.foursquare.com"
+        }
     }
     
     var path: String {
-        return "/v3/places/search"
+        switch self {
+        case .search:
+            return "/v3/places/search"
+        }
     }
     var headers: [String : String]? {
         let API_KEY: String = "fsq30r6nfST8Lshf1/RpuiASATH0ZDXUSvcPOb/Ws+zLhcQ="
-        return [
-            "Authorization": API_KEY,
-            "Content-Type": "application/json;charset=utf-8"
-        ]
+        switch self {
+        case .search:
+            return [
+                "Authorization": API_KEY,
+                "Content-Type": "application/json;charset=utf-8"
+            ]
+        }
     }
-    
-    var body: [String : String]? {
-        return nil
-    }
-    
+
     var queryItems: [URLQueryItem]? {
-        return [
-            URLQueryItem(name: "ll", value: ""),
-            URLQueryItem(name: "radius", value: "")
-        ]
+        switch self {
+        case .search(let radius):
+            return [
+                URLQueryItem(name: "ll", value: ""),
+                URLQueryItem(name: "radius", value: radius)
+            ]
+        }
     }
 }
 

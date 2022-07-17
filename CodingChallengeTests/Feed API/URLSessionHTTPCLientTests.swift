@@ -21,14 +21,13 @@ class URLSessionHTTPClientTests: XCTestCase {
     
     func test_getFromURL_performsGETRequestWithURL() {
         let url = anyURL()
-        let request = URLRequest(url: url)
-                
+        let endpoint = PlacesEndPoint.search(radius: "")
         URLProtocolStub.observeRequests { request in
             XCTAssertEqual(request.url, url)
             XCTAssertEqual(request.httpMethod, "GET")
         }
         
-        makeSUT().sendRequest(endpoint: request) { _ in }
+        makeSUT().sendRequest(endpoint: endpoint) { _ in }
         
     }
     
@@ -107,16 +106,16 @@ class URLSessionHTTPClientTests: XCTestCase {
     
     private func resultFor(data: Data?, response: URLResponse?, error: Error?, file: StaticString = #file , line: UInt = #line) -> HTTPClientResult {
         URLProtocolStub.stub(data: data, response: response, error: error)
-        let request = URLRequest(url: anyURL())
+        let endpoint = PlacesEndPoint.search(radius: "")
         let sut = makeSUT(file: file, line: line)
         let exp = expectation(description: "Wait for completion")
         
         var receivedResult: HTTPClientResult!
-        sut.sendRequest(endpoint: request) { result in
+        sut.sendRequest(endpoint: endpoint) { result in
             receivedResult = result
             exp.fulfill()
         }
-        wait(for: [exp], timeout: 1.0)
+        wait(for: [exp], timeout: 5.0)
         return receivedResult
     }
     

@@ -1,5 +1,6 @@
 //
-//      2022  Betty.dev 
+//      2022  Betty Godier
+//      Coding challenge
 //
 
 import Foundation
@@ -7,22 +8,24 @@ import Foundation
 final class FeedItemsMapper {
     private struct Root: Decodable {
         let results: [Item]
-        
-        var feed: [FeedItem] {
-            return results.map { $0.item }
-        }
     }
-
+    // internal representation of the FeedItem
     private struct Item: Decodable {
-        let id: UUID
-        let name: String
-        let address: String?
-        let city: String?
-        let categoryName: String?
         let distance: Int?
+        let location: Location
+        let name: String
+        let categories: [Category]
         
+        struct Location: Decodable {
+            var address: String?
+            var locality: String?
+        }
+        
+        struct Category: Decodable {
+            var name: String?
+        }
         var item: FeedItem {
-            FeedItem(id: id, name: name, address: address, city: city, categoryName: categoryName, distance: distance)
+            FeedItem(name: name, address: location.address, city: location.locality, categoryName: categories[0].name, distance: distance)
         }
     }
     
@@ -30,9 +33,9 @@ final class FeedItemsMapper {
     
     static func map(_ data: Data, from response: HTTPURLResponse) -> RemoteFeedLoader.Result {
         guard response.statusCode == OK_200,
-            let root = try? JSONDecoder().decode(Root.self, from: data) else {
+              let root = try? JSONDecoder().decode(Root.self, from: data) else {
             return .failure(RemoteFeedLoader.Error.invalidData)
         }
-        return .success(root.feed)
+        return .success(root.results.map { $0.item })
     }
 }
