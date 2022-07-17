@@ -4,10 +4,20 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>CI.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
 		<key>CodingChallenge.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+		<key>CodingChallengeAPIEndToEndTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
 		</dict>
 		<key>CodingChallengeiOS.xcscheme_^#shared#^_</key>
 		<dict>
@@ -23,6 +33,11 @@
 			<true/>
 		</dict>
 		<key>C51F19A8287FFDCD009BF810</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C52CA4412883595800AE4747</key>
 		<dict>
 			<key>primary</key>
 			<true/>

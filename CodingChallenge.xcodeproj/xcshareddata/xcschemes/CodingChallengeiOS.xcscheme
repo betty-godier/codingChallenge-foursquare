@@ -39,6 +39,16 @@
                ReferencedContainer = "container:CodingChallenge.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "C5796143287B7A9000F55985"
+               BuildableName = "CodingChallengeUITests.xctest"
+               BlueprintName = "CodingChallengeUITests"
+               ReferencedContainer = "container:CodingChallenge.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

@@ -21,6 +21,10 @@
 		C52CA43628827CC900AE4747 /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA43528827CC900AE4747 /* URLSessionHTTPClient.swift */; };
 		C52CA4392882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA4382882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift */; };
 		C52CA43B28832D9700AE4747 /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C51F1999287FF441009BF810 /* HTTPClient.swift */; };
+		C52CA4452883595800AE4747 /* CodingChallengeAPIEndToEndTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA4442883595800AE4747 /* CodingChallengeAPIEndToEndTests.swift */; };
+		C52CA4462883595800AE4747 /* CodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51F19A2287FFDCD009BF810 /* CodingChallenge.framework */; };
+		C52CA44D2883FEC800AE4747 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA44C2883FEC800AE4747 /* Endpoint.swift */; };
+		C52CA44E2884006E00AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA4382882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift */; };
 		C579612E287B7A8F00F55985 /* CodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */; };
 		C5796130287B7A8F00F55985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612F287B7A8F00F55985 /* ContentView.swift */; };
 		C5796132287B7A9000F55985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5796131287B7A9000F55985 /* Assets.xcassets */; };
@@ -32,6 +36,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		C51F19AB287FFDCD009BF810 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5796122287B7A8F00F55985 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C51F19A1287FFDCD009BF810;
+			remoteInfo = CodingChallenge;
+		};
+		C52CA4472883595800AE4747 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C5796122287B7A8F00F55985 /* Project object */;
 			proxyType = 1;
@@ -70,6 +81,9 @@
 		C52CA43528827CC900AE4747 /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
 		C52CA4382882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTrackingHelper.swift"; sourceTree = "<group>"; };
 		C52CA43A28829CC200AE4747 /* Risk management.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "Risk management.md"; sourceTree = "<group>"; };
+		C52CA4422883595800AE4747 /* CodingChallengeAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingChallengeAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52CA4442883595800AE4747 /* CodingChallengeAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeAPIEndToEndTests.swift; sourceTree = "<group>"; };
+		C52CA44C2883FEC800AE4747 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		C579612A287B7A8F00F55985 /* CodingChallengeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallengeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeApp.swift; sourceTree = "<group>"; };
 		C579612F287B7A8F00F55985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +112,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C51F19AA287FFDCD009BF810 /* CodingChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52CA43F2883595800AE4747 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52CA4462883595800AE4747 /* CodingChallenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +181,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C52CA4432883595800AE4747 /* CodingChallengeAPIEndToEndTests */ = {
+			isa = PBXGroup;
+			children = (
+				C52CA4442883595800AE4747 /* CodingChallengeAPIEndToEndTests.swift */,
+			);
+			path = CodingChallengeAPIEndToEndTests;
+			sourceTree = "<group>";
+		};
 		C565C139287C9C090053660B /* Feed API */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +196,7 @@
 				C51F1999287FF441009BF810 /* HTTPClient.swift */,
 				C52CA42E2881F65200AE4747 /* FeedItemsMapper.swift */,
 				C52CA43528827CC900AE4747 /* URLSessionHTTPClient.swift */,
+				C52CA44C2883FEC800AE4747 /* Endpoint.swift */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
@@ -231,6 +262,7 @@
 				C52CA43A28829CC200AE4747 /* Risk management.md */,
 				C579612C287B7A8F00F55985 /* CodingChallenge */,
 				C52CA40A288005E000AE4747 /* CodingChallengeTests */,
+				C52CA4432883595800AE4747 /* CodingChallengeAPIEndToEndTests */,
 				C579613D287B7A9000F55985 /* CodingChallengeTestsiOS */,
 				C51F19A3287FFDCD009BF810 /* CodingChallenge */,
 				C5796147287B7A9000F55985 /* CodingChallengeUITests */,
@@ -246,6 +278,7 @@
 				C5796144287B7A9000F55985 /* CodingChallengeUITests.xctest */,
 				C51F19A2287FFDCD009BF810 /* CodingChallenge.framework */,
 				C51F19A9287FFDCD009BF810 /* CodingChallengeTests.xctest */,
+				C52CA4422883595800AE4747 /* CodingChallengeAPIEndToEndTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -345,6 +378,24 @@
 			productReference = C51F19A9287FFDCD009BF810 /* CodingChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		C52CA4412883595800AE4747 /* CodingChallengeAPIEndToEndTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C52CA4492883595800AE4747 /* Build configuration list for PBXNativeTarget "CodingChallengeAPIEndToEndTests" */;
+			buildPhases = (
+				C52CA43E2883595800AE4747 /* Sources */,
+				C52CA43F2883595800AE4747 /* Frameworks */,
+				C52CA4402883595800AE4747 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C52CA4482883595800AE4747 /* PBXTargetDependency */,
+			);
+			name = CodingChallengeAPIEndToEndTests;
+			productName = CodingChallengeAPIEndToEndTests;
+			productReference = C52CA4422883595800AE4747 /* CodingChallengeAPIEndToEndTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C5796129287B7A8F00F55985 /* CodingChallengeiOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C579614E287B7A9000F55985 /* Build configuration list for PBXNativeTarget "CodingChallengeiOS" */;
@@ -414,6 +465,9 @@
 					C51F19A8287FFDCD009BF810 = {
 						CreatedOnToolsVersion = 13.4;
 					};
+					C52CA4412883595800AE4747 = {
+						CreatedOnToolsVersion = 13.4;
+					};
 					C5796129287B7A8F00F55985 = {
 						CreatedOnToolsVersion = 13.4;
 					};
@@ -446,6 +500,7 @@
 				C5796143287B7A9000F55985 /* CodingChallengeUITests */,
 				C51F19A1287FFDCD009BF810 /* CodingChallenge */,
 				C51F19A8287FFDCD009BF810 /* CodingChallengeTests */,
+				C52CA4412883595800AE4747 /* CodingChallengeAPIEndToEndTests */,
 			);
 		};
 /* End PBXProject section */
@@ -459,6 +514,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		C51F19A7287FFDCD009BF810 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52CA4402883595800AE4747 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -497,6 +559,7 @@
 			files = (
 				C52CA43628827CC900AE4747 /* URLSessionHTTPClient.swift in Sources */,
 				C52CA432288200F500AE4747 /* FeedLoader.swift in Sources */,
+				C52CA44D2883FEC800AE4747 /* Endpoint.swift in Sources */,
 				C51F19B9287FFEDC009BF810 /* FeedItem.swift in Sources */,
 				C51F19BA287FFEDF009BF810 /* RemoteFeedLoader.swift in Sources */,
 				C51F19BB287FFEE1009BF810 /* HTTPClient.swift in Sources */,
@@ -511,6 +574,15 @@
 				C51F19C12880031E009BF810 /* RemoteFeedLoaderTests.swift in Sources */,
 				C52CA4392882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift in Sources */,
 				C52CA434288208F400AE4747 /* URLSessionHTTPCLientTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C52CA43E2883595800AE4747 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C52CA4452883595800AE4747 /* CodingChallengeAPIEndToEndTests.swift in Sources */,
+				C52CA44E2884006E00AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +622,11 @@
 			isa = PBXTargetDependency;
 			target = C51F19A1287FFDCD009BF810 /* CodingChallenge */;
 			targetProxy = C51F19AB287FFDCD009BF810 /* PBXContainerItemProxy */;
+		};
+		C52CA4482883595800AE4747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C51F19A1287FFDCD009BF810 /* CodingChallenge */;
+			targetProxy = C52CA4472883595800AE4747 /* PBXContainerItemProxy */;
 		};
 		C579613C287B7A9000F55985 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -657,6 +734,40 @@
 				MACOSX_DEPLOYMENT_TARGET = 12.3;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = dev.betty.CodingChallengeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C52CA44A2883595800AE4747 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GU25HGUJLC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.betty.CodingChallengeAPIEndToEndTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C52CA44B2883595800AE4747 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GU25HGUJLC;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.betty.CodingChallengeAPIEndToEndTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -952,6 +1063,15 @@
 			buildConfigurations = (
 				C51F19B5287FFDCD009BF810 /* Debug */,
 				C51F19B6287FFDCD009BF810 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C52CA4492883595800AE4747 /* Build configuration list for PBXNativeTarget "CodingChallengeAPIEndToEndTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C52CA44A2883595800AE4747 /* Debug */,
+				C52CA44B2883595800AE4747 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
