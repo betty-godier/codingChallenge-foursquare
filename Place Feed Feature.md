@@ -105,13 +105,13 @@
 
 ### Feed Item
 
-| Property   |     Type      | 
-|----------|:-------------:|
-| id |  UUID | 
-| name|    String (optional)   | 
-| address |    String (optional)   | 
-| city|  String (optional) |  
-| categoryName |  String (optional) |  
-| distance | Int(optional) |
+| Property     |     Type            | 
+|--------------|:-------------------:|
+| id           |       UUID          | 
+| name         | String (optional)   | 
+| address      | String (optional)   | 
+| city         | String (optional)   |  
+| categoryName | String (optional)   |  
+| distance     | Int(optional)       |
 
 
