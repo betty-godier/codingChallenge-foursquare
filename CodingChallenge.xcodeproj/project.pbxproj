@@ -24,7 +24,7 @@
 		C52CA4462883595800AE4747 /* CodingChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C51F19A2287FFDCD009BF810 /* CodingChallenge.framework */; };
 		C52CA44D2883FEC800AE4747 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA44C2883FEC800AE4747 /* Endpoint.swift */; };
 		C52CA44E2884006E00AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA4382882992600AE4747 /* XCTestCase+MemoryLeakTrackingHelper.swift */; };
-		C52CA4522884586E00AE4747 /* FeedItemsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA4512884586E00AE4747 /* FeedItemsMapper.swift */; };
+		C52CA4522884586E00AE4747 /* FeedItemsMApper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C52CA4512884586E00AE4747 /* FeedItemsMApper.swift */; };
 		C579612E287B7A8F00F55985 /* CodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */; };
 		C5796130287B7A8F00F55985 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C579612F287B7A8F00F55985 /* ContentView.swift */; };
 		C5796132287B7A9000F55985 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5796131287B7A9000F55985 /* Assets.xcassets */; };
@@ -83,7 +83,7 @@
 		C52CA4422883595800AE4747 /* CodingChallengeAPIEndToEndTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodingChallengeAPIEndToEndTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C52CA4442883595800AE4747 /* CodingChallengeAPIEndToEndTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeAPIEndToEndTests.swift; sourceTree = "<group>"; };
 		C52CA44C2883FEC800AE4747 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		C52CA4512884586E00AE4747 /* FeedItemsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemsMapper.swift; sourceTree = "<group>"; };
+		C52CA4512884586E00AE4747 /* FeedItemsMApper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItemsMApper.swift; sourceTree = "<group>"; };
 		C579612A287B7A8F00F55985 /* CodingChallengeiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodingChallengeiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C579612D287B7A8F00F55985 /* CodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodingChallengeApp.swift; sourceTree = "<group>"; };
 		C579612F287B7A8F00F55985 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -193,7 +193,7 @@
 			isa = PBXGroup;
 			children = (
 				C51F199B287FF76E009BF810 /* RemoteFeedLoader.swift */,
-				C52CA4512884586E00AE4747 /* FeedItemsMapper.swift */,
+				C52CA4512884586E00AE4747 /* FeedItemsMApper.swift */,
 				C51F1999287FF441009BF810 /* HTTPClient.swift */,
 				C52CA43528827CC900AE4747 /* URLSessionHTTPClient.swift */,
 				C52CA44C2883FEC800AE4747 /* Endpoint.swift */,
@@ -560,7 +560,7 @@
 				C52CA43628827CC900AE4747 /* URLSessionHTTPClient.swift in Sources */,
 				C52CA432288200F500AE4747 /* FeedLoader.swift in Sources */,
 				C52CA44D2883FEC800AE4747 /* Endpoint.swift in Sources */,
-				C52CA4522884586E00AE4747 /* FeedItemsMapper.swift in Sources */,
+				C52CA4522884586E00AE4747 /* FeedItemsMApper.swift in Sources */,
 				C51F19B9287FFEDC009BF810 /* FeedItem.swift in Sources */,
 				C51F19BA287FFEDF009BF810 /* RemoteFeedLoader.swift in Sources */,
 				C51F19BB287FFEE1009BF810 /* HTTPClient.swift in Sources */,
